@@ -22,7 +22,7 @@ import cpp.vm.Thread;
  */
 class AsyncHttp {
 	
-	inline static var PATH:String = "https://newgrounds.io/gateway_v3.php";
+	inline static var PATH:String = "https://pkfi.repl.co/snek/https:/newgrounds.io/gateway_v3.php";
 	
 	static public function send
 	( core:NGLite

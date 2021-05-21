@@ -134,7 +134,7 @@ class CorePage extends CorePageLite {
 		_profileButton.enabled = false;
 		for (i in 0 ... _profile.numChildren) {
 			
-			if (Std.is(_profile.getChildAt(i), Loader)) {
+			if (Std.isOfType(_profile.getChildAt(i), Loader)) {
 				
 				_profile.removeChildAt(i);
 				break;

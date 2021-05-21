@@ -73,7 +73,7 @@ class Input {
 			i--;
 			
 			var child = parent.getChildAt(i);
-			if (Std.is(child, TextField)) {
+			if (Std.isOfType(child, TextField)) {
 				
 				if (cast(child, TextField).type == TextFieldType.DYNAMIC)
 					cast(child, TextField).mouseEnabled = cast(child, TextField).selectable;
@@ -99,7 +99,7 @@ class Input {
 		while(i < parent.numChildren) {
 			
 			child = parent.getChildAt(i);
-			if (Std.is(child, TextField)) {
+			if (Std.isOfType(child, TextField)) {
 				
 				field = cast (child, TextField);
 				if (field.background) {
